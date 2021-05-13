@@ -20,7 +20,7 @@ public class mouseListener implements MouseListener{
 
 	@Override
 	public void mouseEntered(MouseEvent e) {
-		JOptionPane.showMessageDialog(null, "Ainda não arrumei");		
+		JOptionPane.showMessageDialog(null, "Ainda não arrumei", "Banido da live", 0);	
 	}
 
 	@Override
