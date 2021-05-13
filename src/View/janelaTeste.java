@@ -89,7 +89,7 @@ public class janelaTeste extends JFrame {
 				// pega o campo em String e converte dentro do método mencionado
 				jogo.verificaJogada(txtCampoValor.getText());
 				
-				// Caso o total de tentativas zere, o botão será desativado
+				// Caso o jogador perca, o botão será desativado
 				if(jogo.getTotalTentativas() == 0) {
 					btnVerificar.setEnabled(false);
 				}
