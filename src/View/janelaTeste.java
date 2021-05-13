@@ -26,7 +26,7 @@ public class janelaTeste extends JFrame {
 		
 	public void init () {
 		painel.add(charadaTxt);
-		painel.add(txtCampoValor);
+		painel.add(txtCampoValor); txtCampoValor.setEnabled(false);
 		painel.add(btnVerificar); btnVerificar.setEnabled(false);
 		painel.add(dicaTxt);
 		painel.add(btnDificuldade);
@@ -62,7 +62,11 @@ public class janelaTeste extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// se o ButtonGroup estiver com alguma opção marcada o botão será liberado
-				if (!seletor.isSelected(null)) {btnVerificar.setEnabled(true);}	
+				if (!seletor.isSelected(null)) {
+					btnVerificar.setEnabled(true);
+					txtCampoValor.setEnabled(true);
+				}	
+				
 			} // fim do Override
 		}); // fim da interação de btnDificuldade
 		
